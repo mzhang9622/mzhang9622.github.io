@@ -65,5 +65,8 @@ window.onload = function () {
         document.body.classList.remove('dark-mode');
     }
 
+    // makes the copyright bar
+    document.getElementById('year').textContent = new Date().getFullYear();
+
 }
 

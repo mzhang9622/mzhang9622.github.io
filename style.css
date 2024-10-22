@@ -400,6 +400,19 @@ a {
 
 }
 
+/* Used Chatgpt for questioning */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    color: #555;
+}
+
 
 
 
