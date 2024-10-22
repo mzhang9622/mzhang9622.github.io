@@ -1,0 +1,405 @@
+:root{
+    --link-color: darkblue;
+    --color-light: lightblue;
+    --color-dark: #1f1e1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Verdana, sans-serif;
+    background: var(--color-light);
+    color: var(--color-dark);
+    max-width: 1400px;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* Navigation section */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+        height: 80px;
+        align-items: center;
+    }
+
+    nav .left a {
+        color: var(--color-dark);
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    nav .middle {
+        display:flex;
+        gap:10px;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .btn input[type="checkbox"] {
+        position: relative;
+        width: 40px;
+        height: 20px;
+        appearance: none;
+        outline: none;
+        border-radius: 20px;
+        box-shadow: inset 0 2px 2px var(--color-dark), inset 0 -2px 2px var(--color-dark);
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .btn input:checked[type="checkbox"] {
+        background: var(--color-dark);
+        box-shadow: inset 0 2px 2px var(--color-light), 0 -2px 2px var(--color-light);
+    }
+
+    .btn input[type="checkbox"]::before {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        top: 3px;
+        left: 3px;
+        background: linear-gradient(to bottom, #252828, #66ecff);
+        transition: 0.5s;
+    }
+
+    .btn input:checked[type="checkbox"]::before {
+        background: linear-gradient(to bottom, #66ecff, #252828);
+        transform: translatex(20px);
+    }
+
+    .dark-mode {
+        --color-dark: lightblue;
+        --color-light: #1f1e1e;
+        --link-color: pink;
+    }
+
+    nav .right a {
+        color: var(--color-dark);
+        margin: 0 10px;
+    }
+
+    /* Grab the last link of the navigation bar: email */
+    nav .right a:last-child {
+        color: var(--color-light);
+        background-color: var(--color-dark);
+        padding: 5px 15px;
+        border-radius: 5px;
+
+    }
+    /* Spacing between the logos */
+    nav .right a span {
+        margin-left: 5px;
+    }
+
+
+/* Personal Profile */
+    .self {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        margin: 50px 0;
+        gap: 40px;
+        margin-bottom: 100px;
+    }
+
+    .self .text {
+        flex: 5;
+    }
+
+    .self .text h2{
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .self .text p {
+        margin-bottom: 20px;
+    }
+
+    .self .text .links {
+        /* Margin top will create space above */
+        margin-top: 25px;
+    }
+
+    .self .text .links a{
+        display: inline-block;
+        padding: 5px 10px;
+        border: 2px solid var(--link-color);
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .self .portrait {
+        flex: 2;
+        /* Extension purpose: even when zooming out the img remains on the right side */
+        display: flex;
+        justify-content: right;
+    }
+
+    .self .portrait img {
+        /* resizes the image */
+        border-radius: 50%;
+        width: 300px;
+    }
+
+
+ /* skills section*/ 
+    .skills {
+        padding: 0 50px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .skills h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .skills p {
+        margin-bottom: 20px;
+    }
+
+
+    .skills .text ul{
+        display: inline-block;
+        vertical-align: top; 
+        width: 200px; 
+        margin-right: 20px; 
+        list-style-type: none; 
+        padding: 0; 
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .skills .text li{
+        padding: 5px 0;
+    }
+
+/* Project section */
+    .project {
+        padding: 0 50px;
+        margin-bottom: 100px;
+    }
+
+    .project h2 {
+        font-size: 35px;
+    }
+
+    .project p {
+        margin-bottom:20px;
+    }
+
+    .project .project-chicken {
+        flex: 2;
+        display: flex;
+        justify-content: right;
+        gap: 50px;
+    }
+
+    .project .project-chicken img {
+        width: 500px;
+        margin-bottom: 100px;
+    }
+
+    .project .tiktaktoe {
+        flex: 2;
+        display: flex;
+        justify-content: right;
+        gap: 20px
+    }
+
+    .project .tiktaktoe img {
+        margin-bottom: 100px;
+    }
+
+    .project .blackjack {
+        display: flex;
+        gap: 20px
+    }
+
+    .project .blackjack2 img {
+        margin-bottom: 100px;
+    }
+
+    .project .sudoku {
+        flex: 2;
+        display: flex;
+        gap: 100px;
+        margin-top: 200px;
+    }
+
+    .project .sudoku img {
+        width: 1000px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+
+/* Experience section */
+    .experience {
+        padding: 0 50px;
+        margin-bottom: 100px;
+    }
+
+    .experience h2 {
+        font-size: 35px;
+    }
+
+    .experience p {
+        margin-bottom: 10px;
+    }
+
+    .experience .ta {
+        margin-bottom: 20px;
+    }
+
+
+/* Contact section */
+    .contact {
+        padding: 0 50px;
+        margin-bottom: 100px;
+    }
+
+    .contact h2 {
+        font-size: 35px;
+    }
+
+    .contact .group {
+        display: flex;
+        gap: 50px;
+    }
+
+
+    .contact .group .text {
+        flex: 3;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .contact .group img {
+        flex: 3;
+    }
+
+    .contact .group form{
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Can target two different groups in css */
+    .contact .group form input, .contact .group form textarea {
+        font-family: Verdana, sans-serif;
+        border: 2px solid var(--link-color);
+        padding: 10px;
+        margin-bottom: 15px;
+        outline: none;
+        resize: none;
+    }
+
+    .contact .group form button {
+        font-size: 16px;
+        font-family: Verdana, sans-serif;
+        color: white;
+        background-color: #00b2ff;
+        height: 50px;
+        cursor:pointer;
+        transition: 0.1;
+    }
+
+/* adjusting screen for other devices */
+@media (max-width: 850px) {
+    /* Self section */
+    .self .text h2 {
+        font-size: 35px;
+    }
+    .skills .text ul {
+        font-size: 20px;
+    }
+}
+
+/* Puts portrait in a column */
+@media (max-width: 740px) {
+    .self {
+        flex-direction: column-reverse;
+    }
+    
+    .skills .text ul {
+        font-size: 20px;
+    }
+
+    .project .project-chicken {
+        flex-direction: column;
+    }
+
+    .project .project-chicken img {
+        width: 300px;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .contact .group {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 650px) {
+    /* for the navigation bar */
+    nav{
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a:last-child {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span{
+        display: none;
+    }
+
+    /* self section */
+    .self {
+        padding: 0 20px;
+        font-size: 22px;
+    }
+
+    .project {
+        padding: 0 20px;
+        font-size:22px;
+    }
+
+    .contact {
+        padding: 0 20px;
+    }
+
+}
+
+
+
+
