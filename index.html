@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <!-- Importing font awesome to use their accessible logos -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+
+
+        <!-- Grabbing the JavaScript file -->
+        <script src="script.js"></script>
+
+        <title>Mingjun Zhang</title>
+
+    </head>
+
+    <body>
+        <!-- For making a navigation page -->
+        <nav>
+        
+            <div class="left">
+                <a href="/">
+                    <span>Mingjun Zhang</span>
+                </a>
+            </div>
+
+            <div class="middle">
+                <span><h4>Display mode</h4></span>
+                <div class="btn">
+                    <input type="checkbox" id="darkModeButton">
+                </div>
+            </div>
+
+            
+            <div class="right">
+
+                <a href="https://github.com/mzhang9622" target="_blank" rel="noopener norereferrer">
+                    <i class="fa-brands fa-square-github"></i>
+                    
+                    <span>Github</span>
+                    
+                </a>
+
+                <a href="https://www.linkedin.com/in/ming-zhang-685596251/" target="_blank" rel="noopener norereferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    <span>Linkedin</span>
+                </a>
+
+                <a href="mailto:mzhang9622@gmail.com" target="_blank" rel="noopener norereferrer">
+                    <i class="fa-regular fa-envelope"></i>
+                <span>Email</span>
+            </a>
+            </div>
+
+        </nav>
+        <main>
+            <!-- self -->
+            <section class="self">
+                <div class="text">
+                    <h2>Hi there! I'm Ming 👋</h2>
+                    <p>
+                        I am an aspiring Software Engineer with a great interest in Game Design and Development.
+                        Enrolled in Colby College, working on a Major in Computer Science and Minors in Mathematics and Japanese. 
+                        Currently taking a course on Software Engineering and Databases to improve myself as a programmer and explore greater heights.
+                    </p>
+                    <p2>
+                        <h4>In progress:</h4>
+                        <ul>
+                            <li>
+                                JLPT Exam (Japanese-Language Proficiency Test) N2-level: <strong>December 1st, 2024</strong>
+                            </li>
+                            <li>
+                                Learning Unity and RPGMaker. 
+                            </li>
+                            <li>
+                                MySQL (ongoing).
+                            </li>
+                        </ul>
+                    </p2>
+
+                    <div id="links" class="links">
+
+                        <a id="skillButton" href="#skills">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Skills</span>
+                        </a> 
+
+                        <a id="projectButton" href="#project">
+                            <i class="fa-solid fa-file"></i>
+                            <span>Projects</span>
+                        </a> 
+
+                        <a id="experienceButton" href="#experience">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <span>Experience</span>
+                        </a> 
+
+                        <a id="contactButton" href="#contact">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                            
+                        
+                    </div>
+                </div>
+
+                <div class="portrait">
+                    <img src="ming-headshot_25.webp" alt="Mingjun Zhang">
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section id="skills" class="skills">
+                <h2>Skills</h2>
+                <p><em>Just a normal sword slash won't slay any dragons...</em></p>
+                <div class="text">
+                    <ul>
+                        <h3>Frontend Development</h3>
+                        <!-- remember to grab some logos -->
+                        <li><i class="fa-brands fa-html5"></i> HTML 5</li>
+                        <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                        <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                    </ul>
+
+                    <ul>
+                        <h3>Backend Development</h3>
+                        <li><i class="fa-brands fa-python"></i> Python</li>
+                        <li><i class="fa-brands fa-java"></i> Java</li>
+                        <li>C++</li>
+
+                    </ul>
+                    
+                    <ul>
+                        <h3>Database</h3>
+                        <li><i class="fa-solid fa-database"></i> MySQL</li>
+                    </ul>
+
+                    <ul>
+                        <h3>Other Randoms</h3>
+                        <li><i class="fa-brands fa-unity"></i> Unity (Currently learning)</li>
+                        <li><i class="fa-solid fa-gamepad"></i> RPGMaker (Currently learning)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section id="project" class="project">
+                <h2>Projects</h2>
+                <p><em>The main events are what makes the adventures exciting!</em></p>
+                <div class="project-chicken">
+                    <div class="content">
+                        <h4>Project Chicken</h4>
+                        This amateur game was done with the Python Turtle as my first official project.
+                        The player plays as a chicken (with sprite borrowed from ConcernApe), to attack the slimes and level up.
+                        If the player's attack is less than the slime's hp, they will lose and launch a lose screen. To win, they must keep fighting the slimes until they reach max level.
+                    </div>
+                    <img class="img" src="cs151project.webp">
+                </div>
+
+                <div class="tiktaktoe">
+                    <div class="content">
+                        <h4>Tiktaktoe</h4>
+                        After learning a bit of C++, I made a Tiktaktoe game that allows 2 players to input values from 1-9 to determine their placements.
+                        Also a very amateur project, but demonstrates the foundation of C++.
+                    </div>
+                    <img class="img" src="tiktaktoe1.webp">
+                    <img class="img" src="tiktaktoe2.webp">
+                </div>
+
+                <div class="blackjack">
+                    
+                    <div class="content">
+                        <h4>Blackjack</h4>
+                        This Java project simulates games of Blackjacks and aims to analyze rates of playerwin, dealerwin, and draw. 
+                        Player and dealer has a hit number, such that if their cards do not add up to more than that number, they keeping hitting.
+                        This number is adjustable, which allows the analysis of the win rates with different given hitnumbers. 
+                    </div>
+                    <img class="img" id="" src="blackjack1.webp">
+                    
+                </div>
+                
+                <div class="blackjack2">
+                    <img class="img" src="blackjack2.webp" style="float: right">
+                </div>
+                
+
+                <div class="sudoku">
+                    
+                    <div class="content">
+                        <h4>Sudoku</h4>
+                        Another project written in Java that solves a given Sudoku problem. It uses a Depth-First-Search algorithm that traverses through all possible solutions and backtracks solutions if no numbers work.
+                        For solvable solutions, it will eventually solve the puzzle. However, it will run endlessly if a puzzle without a solution is given.
+                    </div>
+                    <img class="img" src="sudoku.webp">
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section id="experience" class="experience">
+                <h2>Experience <del class="level">Points</del></h2>
+                <p><em>We all need some way of leveling up.</em></p>
+                <div class="ta">
+                    <h3>Computer Science Teaching Assistant: Colby College</h3>
+                    <p>Teaching Assistant for the course CS231: Data Structures and Algorithms. The job allowed me to tutor students who had issues with their projects. 
+                        There were also times where collaborations between other TAs were done to solve difficult bugs</p>
+                </div>
+
+                <div class="research">
+                    <h3>Computer Science Research Assistant: Colby College</h3>
+                    <p>During a JanPlan course (January-term courses offered at Colby College) I was a research assistant for Professor Max Bender along with three other assistants.
+                        The research was about the classic graph-based game: Cops and Robbers. The students were responsible for developing an algorithm that determined whether a graph is cop-win or cop-lose.
+                        Throughout the research, many definitions, theorems, and lemmas were defined. The results are unofficially written.
+                        Click to teleport -> <a href="https://github.com/mzhang9622/CopsAndRobbers" target="_blank">Cops and Robbers</a>
+                    </p>
+                    
+                </div>
+                
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="contact">
+                <h2>Contact me!</h2>
+                <p><em>Everyone needs companions on the way</em></p>
+
+                <div class="group">
+                    <div class="text">
+                        <p>
+                            If somehow you decide to contact me, the form on the right is for you to use!
+                            Oh, and it's dangerous to go alone, take this staff!
+                        </p>
+                        <img src="staff.webp" style="float: left">
+                    </div>
+                    
+                
+
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="3b7becb6-2448-409d-aa53-6e9e1d99a885">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="contact-inputs" required>
+
+                        <label for="name">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" class="contact-inputs" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="contact-inputs" placeholder="Type something!" cols="30" rows="10" required></textarea>
+
+                        <button id="submitButton" type="submit">Send Message</button>
+
+
+                    </form>
+
+
+                </div>
+
+            </section>
+
+            
+
+        </main>
+        
+
+    </body>
+
+
+
+
+
+</html>
